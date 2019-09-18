@@ -1,5 +1,6 @@
 # dingdingAllUser
 钉钉只有遍历部门、子部门、部门下所有员工的信息的api，没有遍历所有员工的API，所以写了个递归来获取公司所有员工
+```
 from dingtalk import SecretClient
  
 def get_all_user_by_departments(client, all_departments):
@@ -27,3 +28,4 @@ if __name__ == '__main__':
  
     all_departments = client.department.list()
     get_all_user_by_departments(client, all_departments)
+```
